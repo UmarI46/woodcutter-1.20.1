@@ -1,6 +1,10 @@
 package net.cfodd.woodcuttermod;
 
 import com.mojang.logging.LogUtils;
+import net.cfodd.woodcuttermod.block.ModBlocks;
+import net.cfodd.woodcuttermod.item.ModCreativeModeTabs;
+import net.cfodd.woodcuttermod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -24,6 +28,11 @@ public class WoodCutterMod {
     public WoodCutterMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -35,6 +44,9 @@ public class WoodCutterMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.WOOD_SCRAP);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

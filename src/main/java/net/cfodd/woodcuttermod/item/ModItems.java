@@ -20,3 +20,5 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 }
+//"item": "woodcuttermod:wood_scrap"
+//"item": "minecraft:acacia_button"

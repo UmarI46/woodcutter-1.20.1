@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#  ",
+    "#  ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "woodcuttermod:wood_scrap"
+    }
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 2
+  }
+}

@@ -1,6 +1,11 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "woodcuttermod:block/woodcutter"
+    "north": "woodcuttermod:block/woodcutter_side",
+    "south": "woodcuttermod:block/woodcutter_side",
+    "east": "woodcuttermod:block/woodcutter_side",
+    "west": "woodcuttermod:block/woodcutter_side",
+    "up": "woodcuttermod:block/woodcutter_top",
+    "down": "woodcuttermod:block/woodcutter_bottom"
   }
 }

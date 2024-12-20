@@ -24,6 +24,7 @@ public class ModBlocks {
     //Creating your own block, use .of instead of .copy if you want something unique
     public static final RegistryObject<Block> WOODCUTTER= registryBlock("woodcutter", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).sound(SoundType.WOOD).mapColor(MapColor.WOOD)));
 
+
     //Creates the block we want
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn= BLOCKS.register(name, block);

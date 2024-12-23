@@ -15,12 +15,12 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WoodCutterMod.MOD_ID);
 
     //Creates a new tab in the creative menu
-    public static final RegistryObject<CreativeModeTab> WOODCUTTER_TAB= CREATIVE_MODE_TABS.register("woodcutter_tab", ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.WOOD_SCRAP.get()))
+    public static final RegistryObject<CreativeModeTab> WOODCUTTER_TAB= CREATIVE_MODE_TABS.register("woodcutter_tab", ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.OAK_WOOD_SCRAP.get()))
             //gets the title from the en_us.json using the key passed in
             .title(Component.translatable("creativetab.woodcutter_tab"))
             //Adds items to the newly made tab
             .displayItems((itemDisplayParameters, output) -> {
-                output.accept(ModItems.WOOD_SCRAP.get());
+                output.accept(ModItems.OAK_WOOD_SCRAP.get());
                 output.accept(ModBlocks.WOODCUTTER.get());
             })
             .build());

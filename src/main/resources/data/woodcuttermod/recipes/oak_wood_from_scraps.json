@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "building_blocks",
   "pattern": [
     "## ",
     "## ",
@@ -8,7 +8,7 @@
   ],
   "key": {
     "#": {
-      "item": "woodcuttermod:wood_scrap"
+      "item": "woodcuttermod:oak_wood_scrap"
     }
 },
   "result": {

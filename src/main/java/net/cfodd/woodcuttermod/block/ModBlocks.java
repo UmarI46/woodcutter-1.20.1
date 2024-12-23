@@ -22,7 +22,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, WoodCutterMod.MOD_ID);
 
     //Creating your own block, use .of instead of .copy if you want something unique
-    public static final RegistryObject<Block> WOODCUTTER= registryBlock("woodcutter", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).sound(SoundType.WOOD).mapColor(MapColor.WOOD)));
+    public static final RegistryObject<Block> WOODCUTTER= registryBlock("woodcutter", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.WOOD).mapColor(MapColor.WOOD)));
 
 
     //Creates the block we want

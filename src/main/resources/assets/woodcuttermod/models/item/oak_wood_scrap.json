@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "woodcuttermod:item/wood_scrap"
+    "layer0": "woodcuttermod:item/oak_wood_scrap"
   }
 }

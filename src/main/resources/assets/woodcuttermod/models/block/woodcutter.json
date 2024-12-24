@@ -1,9 +1,10 @@
 {
   "parent": "minecraft:block/block",
   "textures": {
-    "side": "woodcuttermod:block/woodcutter_side",
-    "top": "woodcuttermod:block/woodcutter_top",
+    "particle": "minecraft:block/oak_log",
     "bottom": "woodcuttermod:block/woodcutter_bottom",
+    "top": "woodcuttermod:block/woodcutter_top",
+    "side": "woodcuttermod:block/woodcutter_side",
     "saw": "minecraft:block/stonecutter_saw"
   },
   "elements": [

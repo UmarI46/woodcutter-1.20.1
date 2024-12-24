@@ -1,6 +1,7 @@
 package net.cfodd.woodcuttermod.block;
 
 import net.cfodd.woodcuttermod.WoodCutterMod;
+import net.cfodd.woodcuttermod.block.custom.WoodcutterBlock;
 import net.cfodd.woodcuttermod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -22,7 +23,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, WoodCutterMod.MOD_ID);
 
     //Creating your own block, use .of instead of .copy if you want something unique
-    public static final RegistryObject<Block> WOODCUTTER= registryBlock("woodcutter", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.WOOD).mapColor(MapColor.WOOD)));
+    public static final RegistryObject<Block> WOODCUTTER= registryBlock("woodcutter", ()-> new WoodcutterBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.WOOD).mapColor(MapColor.WOOD).noOcclusion()));
 
 
     //Creates the block we want

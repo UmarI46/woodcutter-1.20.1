@@ -11,7 +11,7 @@
       "item": "minecraft:iron_ingot"
     },
     "W": {
-      "item": "minecraft:oak_wood"
+      "tag": "woodcuttermod:six_sided_logs"
     }
   },
   "result": {
